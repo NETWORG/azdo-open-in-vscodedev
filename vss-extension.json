@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "open-in-vscodedev",
     "publisher": "NETWORG",
-    "version": "0.0.27",
+    "version": "0.0.28",
     "name": "Open in VSCode.dev",
     "description": "Adds a handy button to open your Azure Repo in VSCode.dev",
     "public": true,
@@ -16,7 +16,7 @@
         "license": {
             "path": "LICENSE.md"
         },
-        "privacy": {
+        "privacypolicy": {
             "path": "PRIVACY.md"
         }
     },
