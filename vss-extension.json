@@ -1,0 +1,82 @@
+{
+    "manifestVersion": 1,
+    "id": "open-in-vscodedev",
+    "publisher": "NETWORG",
+    "version": "0.0.27",
+    "name": "Open in VSCode.dev",
+    "description": "Adds a handy button to open your Azure Repo in VSCode.dev",
+    "public": true,
+    "categories": [
+        "Azure Repos"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        },
+        "privacy": {
+            "path": "PRIVACY.md"
+        }
+    },
+    "links": {
+        "support": {
+            "uri": "https://github.com/NETWORG/azdo-open-in-vscodedev/issues"
+        }
+    },
+    "tags": [
+        "vscode.dev",
+        "VSCode",
+        "Visual Studio Code"
+    ],
+    "icons": {
+        "default": "static/open-in-vscodedev.png"
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/NETWORG/azdo-open-in-vscodedev"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "galleryFlags": [
+        "Public",
+        "Preview"
+    ],
+    "contributions": [
+        {
+            "id": "open-in-vscodedev",
+            "type": "ms.vss-web.action",
+            "targets": [
+                "ms.vss-code-web.source-item-menu"
+            ],
+            "properties": {
+                "uri": "static/open-in-vscodedev.html",
+                "text": "Open in VSCode.dev",
+                "icon": {
+                    "light": "static/open-in-vscodedev.png",
+                    "dark": "static/open-in-vscodedev.png"
+                },
+                "registeredObjectId": "open-in-vscodedev"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true
+        }
+    ]
+}
